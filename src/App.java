@@ -2,12 +2,19 @@
 public class App {
 
 	public static void main(String[] args) {
-		Notes chords = new Notes();
+		Notes notes = new Notes();
 		
-		System.out.println(chords.getChord(0, false, false));
-		System.out.println(chords.getChord(1, true, false));
-		System.out.println(chords.getChord(2, false, true));
-		System.out.println(chords.getChord(3, true, true));
+		Chord c = new Chord("C", false, false);
+		System.out.println(c);
+		
+		Chord a = new Chord("a", true, false);
+		System.out.println(a);
+		
+		Chord e = new Chord("E", false, true);
+		System.out.println(e);
+		
+		Chord fSharp = new Chord("f#", true, true);
+		System.out.println(fSharp);
 
 	}
 
